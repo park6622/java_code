@@ -15,6 +15,10 @@ public class calendar {
 		for (int i = 0; i < month.length; i++) {
 			System.out.print("월을 입력하세요 : ");
 			month[i] = sc.nextInt();
+			if(month[i] < 1 || month[i] > 12)   {
+				System.out.println("다시 입력해주세요");
+				i--;
+			}
 		}
 		return month;
 	}
